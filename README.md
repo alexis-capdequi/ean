@@ -1,2 +1,1 @@
-# ean
-# ean
+# EAM key build script
