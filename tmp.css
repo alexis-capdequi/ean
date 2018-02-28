@@ -6,13 +6,11 @@
     width: 100%;
     overflow: hidden;
 }
-
 .background-container img {
     filter: blur(2px);
     height: auto;
     width: 100%;
 }
-
 .background-container .translucent {
     background: rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -31,7 +29,6 @@
     top: 0px;
     width: 100%;
 }
-
 .title h1 {
     color: #FFF;
     font-size: 64px;
@@ -48,8 +45,10 @@
     margin-top: 300px;
 }
 
-.form-title {
-    background: rgba(0, 0, 0, 0.6);
+.form-title,
+.fields,
+.result {
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .form-title h1 {
@@ -58,23 +57,21 @@
     padding: 28px;
 }
 
-form {
-    background: rgba(0, 0, 0, 0.6);
+.fields {
+    position: relative;
+    margin-bottom: 70px;
     padding: 28px;
 }
-
-form input[type=text] {
+.fields input[type=text] {
     font-size: 20px;
     height: 40px;
     width: 500px;
     margin-right: 40px;
 }
-
-form input[type=text]:focus {
+.fields input[type=text]:focus {
     border-color:#333;
 }
-
-input[type=submit] {
+.fields button {
     background: #ccc;
     border: 0 none;
     border-radius: 5px;
@@ -82,4 +79,26 @@ input[type=submit] {
     font-size: 20px;
     padding: 12px 26px; 
 }
+.fields .arrow {
+    display: none;
+    position: absolute;
+    bottom: -49px;
+    left: calc(50% - 50px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 50px;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+}
 
+.result {
+    display: none;
+    color: #FFF;
+    font-size: 38px;
+    padding: 20px;
+    text-align: center;
+}
+.result span {
+    font-size: 46px;
+    font-weight: bold;
+}
